@@ -11,6 +11,7 @@ function App() {
         <Route path="/" exact element={<CreateProjectForm/>} />
         <Route path="/project-type" element={<ProjectTypeForm/>} />
         <Route path="/view" element={<ViewSelector />} />
+        <Route path='*' element={"Page under construction"}/>
       </Routes>
     </Router>
   );
