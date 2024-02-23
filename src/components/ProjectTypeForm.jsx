@@ -27,8 +27,8 @@ const StyledButton = styled(Button)({
 });
 
 const StyledNextButton = styled(Button)({
-  backgroundColor: "#2196F3",
-  color: "#fff",
+    backgroundColor: "#2196F3",
+    color: "#fff",
 });
 export default function ProjectTypeForm() {
 
@@ -107,9 +107,9 @@ export default function ProjectTypeForm() {
           </Grid>
           <Grid item>
             <Link to="/view">
-              <StyledButton variant="outlined">
+              <StyledNextButton variant="outlined">
                 Next
-              </StyledButton>
+              </StyledNextButton>
             </Link>
           </Grid>
         </Grid>
