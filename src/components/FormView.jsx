@@ -34,6 +34,14 @@ export default function FormView() {
 
       <StyledForm>
         <Typography>You can also customize these views in settings</Typography>
+        <Grid >
+            <Grid item>
+                <p>List</p>
+            </Grid>
+            <Grid item>
+                <p>Board</p>
+            </Grid>
+        </Grid>
         <Grid container spacing={2} alignItems="center">
           <Grid item>
             <Link to="/project-type">
@@ -42,7 +50,7 @@ export default function FormView() {
           </Grid>
           <Grid item xs={6} />
           <Grid item>
-            <Link to="/project-type">
+            <Link to="/manage-projects">
               <StyledNextButton variant="contained">Next</StyledNextButton>
             </Link>
           </Grid>
