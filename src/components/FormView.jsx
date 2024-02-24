@@ -25,6 +25,24 @@ const StyledContainer = styled(Container)({
   height: "100vh",
 });
 
+const StyledList = styled.div`
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 1rem 1rem;
+  margin: 3rem 2rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+`;
+
+const StyledBoard = styled.div`
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 0 0 0 5px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+`;
+
 export default function FormView() {
   return (
     <StyledContainer>
@@ -34,14 +52,14 @@ export default function FormView() {
 
       <StyledForm>
         <Typography>You can also customize these views in settings</Typography>
-        <Grid >
-            <Grid item>
-                <p>List</p>
-            </Grid>
-            <Grid item>
-                <p>Board</p>
-            </Grid>
-        </Grid>
+        <div>
+          <StyledList>
+            <p>List</p>
+          </StyledList>
+          <StyledBoard>
+            <p>Board</p>
+          </StyledBoard>
+        </div>
         <Grid container spacing={2} alignItems="center">
           <Grid item>
             <Link to="/project-type">
